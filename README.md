@@ -21,5 +21,6 @@
 - mongoDB (mongoose) and Sequelize is used.
 
 ## Walkthrough video:
-Part-1: https://drive.google.com/file/d/1W4kGziwoa1eN2qo0pEWnrdFkESta33D7/view
-Part-2: https://drive.google.com/file/d/1CnVmycR2fJtvp4vfyWlES0DhAq4XANXQ/view
+- Part-1: https://drive.google.com/file/d/1-R7f4N7iajrwD2ntem9jrJ-IWy2RJoLB/view
+- Part-2: https://drive.google.com/file/d/1GAaqtburM0A_DFkUi3xMkggdIG_TXad7/view
+- Part-3: https://drive.google.com/file/d/13MoP53-uYABkJ1Zpz_BWklJI7Au33Vy9/view
