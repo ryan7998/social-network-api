@@ -1,16 +1,21 @@
 const {Thought, User} = require('../models');
 
 const thoughtController = {
+    //get all thoughts
     getAllThoughts(req, res){
         Thought.find({})
         .then(dbThoughtData => res.json(dbThoughtData))
         .catch(err => res.status(400).json(err));
     },
+
+    //get thoughts by ID
     getThoughtById({params}, res){
         Thought.findOne({_id: params.id})
         .then(dbThoughtData => res.json(dbThoughtData))
         .catch(err => res.status(400).json(err));
     },
+
+    //create a thougth and insert it in user's thoughts document:
     createThought({body}, res){
         Thought.create(body)
         .then(returnData => {
@@ -27,6 +32,8 @@ const thoughtController = {
             res.status(400).json(err)
         });
     },
+
+    //update thought
     updateThought({params, body}, res){
         Thought.findOneAndUpdate({_id: params.id}, body, {new: true})
         .then(dbThoughtData => {
@@ -38,6 +45,8 @@ const thoughtController = {
         })
         .catch(err=>res.status(400).json(err));
     },
+
+    //Delete thoughts:
     deleteThought({params}, res){
         Thought.findOneAndDelete({_id: params.id})
         .then(dbThoughtData =>{
