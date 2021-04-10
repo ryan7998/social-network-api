@@ -15,8 +15,11 @@
 - Reaction Schema is created as the reaction field's subdocument schema in the Thought model.
 - Removing a user, removes associated thoughts from thoughts collections.
 - Creating a new thought push the created thought's _id to the associated user's thoughts array field.
+- Custom javascript created to format date and time which is set by get method in the createdAt fields in both Thought and Reaction Schema.
 
 ## Technical description: 
 - mongoDB (mongoose) and Sequelize is used.
 
 ## Walkthrough video:
+Part-1: https://drive.google.com/file/d/1W4kGziwoa1eN2qo0pEWnrdFkESta33D7/view
+Part-2: https://drive.google.com/file/d/1CnVmycR2fJtvp4vfyWlES0DhAq4XANXQ/view
